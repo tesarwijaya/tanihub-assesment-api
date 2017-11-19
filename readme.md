@@ -15,7 +15,19 @@
 username: admin@admin.com
 password: password
 ```
-
+## API documentation
+| Method | URL | parameter |
+| ------ | --- | --------- |
+| POST   | oauth/token | `username` |
+|        | *protected with client credential* | `password` |
+|        |             | `grant_type` only support password grant type |
+|        |             | `scope` |
+|        |             | `client_id` client app id |
+|        |             | `client_secret` client app secret |
+| GET    | api/products | `item_per_page` |
+|        | *protected with oauth token* | `page` |
+| GET    | api/image | `name` image name |
+|        | *not protected* |   |
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
