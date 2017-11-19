@@ -6,6 +6,7 @@
 - copy `.env.example` to `.env` and change database setting matching local machine
 - Install Dependencies `composer install`
 - Generate App key `php artisan key:generate`
+- Install passport `php artisan passport:install` to create private and public key add `--force` if needed
 - Migrate and seed the database `php artisan migrate --seed`
 - Serve the API `php artisan serve`, this app will available in `http://localhost:8000`
 - Run test and generate code coverage using xdebug `vendor/bin/phpunit --coverage-text --color=never`
