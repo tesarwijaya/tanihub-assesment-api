@@ -10,6 +10,12 @@
 - Serve the API `php artisan serve`, this app will available in `http://localhost:8000`
 - Run test and generate code coverage using xdebug `vendor/bin/phpunit --coverage-text --color=never`
 
+## Default Username and Password
+```
+username: admin@admin.com
+password: password
+```
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
